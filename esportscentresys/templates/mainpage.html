@@ -1,0 +1,119 @@
+{% extends 'template.html'}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+         <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+        <title>E-Sports Events</title>
+    </head>
+
+<style>
+
+    body{
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg)
+    }
+</style>
+
+<body>
+    <div>
+    <form method=POST action="model3_payment.html"> 
+    <br>     
+    <h1><center>E-Sports Events</center></h1>
+    <br>
+    <h2>Customer Information</h2>
+    <p>Please fill out the forms</p>
+    </div>   
+<center>
+    <input type="text" id="firstname=" name="FirstName" size="42" placeholder="First Name" required/>
+</center><br>
+<center>
+    <input type="text" id="lastname" name="LastName" size="42" placeholder="Last Name" required/>
+</center><br>
+<center>
+    <input type="phone" id="contactnumber" name="ContactNumber" size="42" placeholder="Contact Number" required /> 
+</center><br>
+
+<center>
+    <input type="email" id="emailaddress" name="Email" size="42" placeholder="E-mail Address" required /> 
+</center><br>
+   
+
+<center>
+    <select name="Game" style="width: 130px;" id="SelectGame" placeholder="Select Game:" required>
+                <option value ="selectgame" disabled selected="">Select Game:</option><br>
+                <option value ="ml">Mobile Legends</option><br>
+                <option value ="valo">Valorant</option>
+                <option value="codm">Call of Duty Mobile</option>
+                <option value="dota2">Dota 2</option>
+
+    </select>
+</center><br>
+<center>
+    <select name="Ticket" style="width: 130px;" id="SelectTicket" placeholder="Select Ticket type:" required>
+                <option value ="selectticket" disabled selected="">Select Ticket Type:</option><br>
+                <option value ="vip">VIP-Php 1000</option><br>
+                <option value ="patron">Patron-Php 800</option>
+                <option value="lowerbox">Lower Box-Php 400</option>
+                <option value="genad">General Admission-Php 200</option>
+
+    </select>
+</center>
+<br>
+<center>
+    <select name="Quantity" style="width: 130px;" id="SelectQuantity" placeholder="Select Quantity:" required>
+                <option value ="selectquantity" disabled selected="">Select Quantity:</option><br>
+                <option value ="1">1</option><br>
+                <option value ="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+    </select>
+</center>
+<center>
+    <br>
+    <select name="Payment" style="width: 130px;" id="SelectPayment" placeholder="Select Game:" required>
+                <option value ="selectpayment" disabled selected="">Select Payment:</option><br>
+                <option value ="gcash">Gcash</option><br>
+                <option value ="paymaya">Paymaya</option>
+                <option value="coins">Coins PH</option>
+    </select>
+<br><br>
+    <select name="Courier" style="width: 130px;" id="SelectCourier" placeholder="Select Game:" required>
+                <option value ="selectcourier" disabled selected="">Select Courier:</option><br>
+                <option value ="Some Questions">Ninja Van</option><br>
+                <option value ="Comment/Feedback">LBC</option>
+                <option value="About Features">J%T Express</option>
+    </select>
+
+<br><br>
+<label for="date" ><p2>Date Today<p2><br></label>
+  <input type="date" id="deliverydate" name="orderdate">
+</td>
+
+
+<br><br>
+<label for="date"><p2>Preferred Delivery Date<p2><br></label>
+  <input type="date" id="deliverydate" name="deliverydate">
+
+</td>
+
+<center>
+
+
+<center>
+    <br>
+    <input id="btnConfirm" type="submit" value="ENTER"/>
+</center>
+
+    <br><br>
+
+    </table>
+    </form>
+
+    </body>
+</html>
+{% endblock %}

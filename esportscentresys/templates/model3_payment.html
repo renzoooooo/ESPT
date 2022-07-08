@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+         <link rel="stylesheet" type="text/css" href="style.css">
+        <title>E-Sports Events</title>
+    </head>
+
+<style>
+
+    body{
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg)
+    }
+
+</style>
+
+<body>
+    <div>
+    <form method=POST action="model4_feedback.html"> 
+    <br>     
+    <h1><center>E-Sports Events</center></h1>
+    <div class="navbar">       
+             
+                <a class="custominfo" href= "model1_custominfo.html">Customer Info</a>      
+    </div>
+    <br>
+    <h2>Transaction Summary</h2>
+    </div>   
+
+<br>
+
+   <table border="5" bordercolor="" align="center">
+  <tr>
+    <th colspan="10">Order Details</th>
+</tr>
+        <tr>
+            <td>Name:</td>
+            <td>Address:</td>
+            <td>Number:</td>
+            <td>Email:</td>
+            <td>Game:</td>
+            <td>Ticket Type:</td>
+            <td>Quantity:</td>
+            <td>Mode of Payment:</td>
+            <td>Courier:</td>
+            <td>Delivery Date:</td>
+
+
+        </tr>
+        <tr>
+            <td>{{forloop.counter}}: {{item.itemName}}</td>
+            <td>{{forloop.counter}}: {{item.itemAddress}}</td>
+            <td>{{forloop.counter}}: {{item.itemNumber}}</td>
+            <td>{{forloop.counter}}: {{item.itemEmail}}</td>
+            <td>{{forloop.counter}}: {{item.itemGame}}</td>
+            <td>{{forloop.counter}}: {{item.itemTicket}}</td>
+            <td>{{forloop.counter}}: {{item.itemQuantity}}</td>
+            <td>{{forloop.counter}}: {{item.itemPayment}}</td>
+            <td>{{forloop.counter}}: {{item.itemCourier}}</td>
+            <td>{{forloop.counter}}: {{item.itemDate}}</td>
+    </table>
+<center>
+    <br>
+    <input id="btnConfirm" type="submit" value="Done"/>
+</center>
+
+    <br><br>
+    </form>
+
+    </body>
+</html>

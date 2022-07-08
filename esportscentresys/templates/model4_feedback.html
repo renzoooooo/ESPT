@@ -1,0 +1,40 @@
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>esportscentre</title>
+
+    </head>
+    <style>
+    body{
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg)
+    }
+    </style>
+    <body>
+
+        <form method=POST>      
+        <center><h1>Feedback</h1>
+        <label class="form_label">If you are interested to promote your game, or any suggestions, Please fill out the form below </label>
+                <br><br>
+        <input type="text" id="Username" name="name" size="28" placeholder="Name" required/>
+        <br><br>
+        <input type="email" id="Useremail" name="email" size="28" placeholder="Email" required /> 
+        <br><br>
+        <input type="tel" id="Usernumber" name="number" size="28" placeholder="Mobile Number" required /> 
+        <br><br>
+        <textarea id="Usermessage" name="message" size="35" placeholder="Message" required></textarea><br>
+            {% csrf_token %}
+            <br><br>
+        <input id="btnSend" type="submit" value="Send"/>
+        <br><br>
+            <table id="registryTable">
+                {% for item in input_IngameInfo %}
+                <tr>
+                    <td>Entry {{forloop.counter}}: {{item.uname}}, {{item.uemail}}, {{item.unumber}}, {{item.umessage}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </form>
+    </body>
+</html>

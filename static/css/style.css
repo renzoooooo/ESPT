@@ -1,0 +1,98 @@
+body{
+        background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg)}
+
+h1{
+        font-size: 40px;
+        color: dimgray	;
+        font-family: arial black;
+        padding-left: 25px;
+    }
+    h2{
+        text-align: center;
+        font-size: 22px;
+        color: black	;
+    }
+    h3{
+        padding-left: 30%;
+        font-size: 18px;
+        color: darkred  ;
+    }
+    h4{
+        padding-left: 30%;
+        font-size: 18px;
+        color: darkred  ;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+        color: darkred;
+    }
+
+    p2{
+        text-align: center;
+        font-size: 15px;
+        color: darkred;
+    }
+
+    .home {
+            padding-left:16%;
+            font-size:12px;
+            color:white;
+            font-family: calibri;
+            text-decoration: none;
+            margin-right:0%;}
+
+    .rules {
+            padding-left:1%;
+            font-size:12px;
+            color:white;
+            font-family: calibri;
+            text-decoration: none;
+            margin-right:0%;}
+
+    .history {
+            padding-left:1%;
+            font-size:12px;
+            color:white;
+            font-family: calibri;
+            text-decoration: none;
+            margin-right:0%;}
+
+    .about {
+            padding-left:1%;
+            font-size:12px;
+            color:white;
+            font-family: calibri;
+            text-decoration: none;
+            margin-right:0%;}
+
+    .custominfo {
+            padding-left: 46%;
+            font-size: 18px;
+            color: darkred;
+            text-decoration: none;
+    }      
+    .ordersum {
+            padding-left: 8%;
+            font-size: 18px;
+            color: darkred;
+            text-decoration: none;
+    }
+
+    .feedback {
+            padding-left: 10%;
+            font-size: 18px;
+            color: darkred;
+            text-decoration: none;
+    }
+    .paymentmod {
+            padding-left: 8%;
+            font-size: 18px;
+            color: darkred;
+            text-decoration: none;
+    }
+.navbar{
+   height: 12%;
+   display: flex;
+   align-items: center;
+}

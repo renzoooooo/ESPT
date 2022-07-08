@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+        <title>E-Sports Events</title>
+    </head>
+    <body>
+        <div>
+        
+        <br>     
+        <div class="navbar">       
+                 
+                    <a class="custominfo" href= "model1_custominfo.html">Customer Info</a>
+                    <a class="ordersum" href= "model3_payment.html">Order Summary</a>
+                    <a class="feedback" href= "model4_feedback.html">Feedback</a>
+                       
+        </div>
+
+            {% block content %}
+            {% endblock %}
+    </body>
+</html>

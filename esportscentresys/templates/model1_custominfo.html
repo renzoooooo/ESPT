@@ -1,0 +1,42 @@
+{% extends 'vani.html' %}
+{% load static %}
+{% block content%}
+
+
+    <div>
+    <form method=POST action="model2_order.html"> 
+    <br>     
+    <h1><center>E-Sports Events</center></h1>
+    <br>
+    <h2>Customer Information</h2>
+    <p>Please fill out the forms</p>
+    </div>   
+    <center>
+    <input type="firstname" id="FirstName" name="name" size="42" placeholder="First Name" required/>
+    </center><br>
+    <center>
+    <input type="lastname" id="LastName" name="name" size="42" placeholder="Last Name" required/>
+    </center><br>
+    <center>
+    <input type="contactnumber" id="ContactNumber" name="Number" size="42" placeholder="Contact Number" required /> 
+    </center><br>
+    <center>
+    <input type="email" id="E-mailAddress" name="email" size="42" placeholder="E-mail Address" required /> 
+    </center><br>
+    <center>
+    <select name="topic" style="width: 330px;" id="BuyerTopic" placeholder="Select Ticket type:" required>
+                <option value ="selectticket" disabled selected="">Sex:</option><br>
+                <option value ="male">Male</option><br>
+                <option value ="female">Female</option><br>\
+    </select>
+    <center>
+    <br>
+    <input id="btnConfirm" type="submit" value="ENTER"/>
+</center>
+
+    <br><br>
+
+    </table>
+    </form>
+
+{% endblock %}
